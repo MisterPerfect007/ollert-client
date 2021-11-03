@@ -1,11 +1,12 @@
 import React from 'react';
+import BoardHeader from '../../Components/BoardHeader/BoardHeader';
 import Header from '../../Components/Header/Header';
 
 function Home() {
     return (
         <div className="home">
             <Header />
-            <h1>Home</h1>
+            <BoardHeader />
         </div>
     )
 }

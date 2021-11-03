@@ -14,7 +14,7 @@ function Header() {
                 <img className="header--logo" src={logo} alt="logo" />
                 <div className="header--boardInfo">
                     <h1 className="header--boardInfo_Title">DevChallenge Board</h1>
-                    <div className="header--boardInfo_btn">
+                    <div className="header--boardInfo_btn gray-btn">
                         <IconContext.Provider value={{color: "var(--gray-3)",size: "1.5em"}}>
                             <div className="d-f">
                                 <CgLayoutGridSmall />
@@ -35,8 +35,10 @@ function Header() {
                     <button className="header--search_btn">Search</button>
                 </div>
                 <div className="header--userInfo">
-                    <div>
-                        <img src="" alt="" />
+                    <div className="header--userInfo_photoParent">
+                        <img 
+                            className="header--userInfo_photo" 
+                            src="https://images.unsplash.com/photo-1612601006505-1254db3e290d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80" alt="" />
                     </div>
                     <h3 className="header--userInfo_name">first name last name</h3>
                     <RiArrowDownSFill />
