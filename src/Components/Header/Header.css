@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 67px;
+    height: var(--header-height);
     background-color: #fff;
     /* border: 1px solid red; */
     display: flex;
@@ -34,19 +34,19 @@
     padding-right: 20px;
     margin-right: 20px;
 }
-    /* .header--boardInfo_btn {
-        display: flex;
-        align-items: center;
-        background-color: var(--gray-bg-1);
-        padding: 4px 8px;
-        border-radius: var(--radius-1);
-        cursor: pointer;
-    } */
-.header--boardInfo_btn:hover {
+/* .header--boardInfo_btn {
+    display: flex;
+    align-items: center;
+    background-color: var(--gray-bg-1);
+    padding: 4px 8px;
+    border-radius: var(--radius-1);
+    cursor: pointer;
+} */
+/* .header--boardInfo_btn:hover {
     transition: all 0.3s;
     background-color: #e6e6e6;
-}
-.header--boardInfo_btn > h3 {
+} */
+/* .header--boardInfo_btn > h3 {
     font-weight: 500;
     font-style: normal;
     font-size: 12px;
@@ -54,7 +54,7 @@
     letter-spacing: -0.035em;
     font-family: poppins;
     color: var(--gray-3);
-}
+} */
 .header__right{
     display: flex;
     align-items: center;
@@ -102,20 +102,7 @@
     background-color: var(--gray-bg-1);
     cursor: pointer;
 }
-.header--userInfo_photoParent {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    background-color: var(--gray-bg-1);
-    border-radius: var(--radius-1);
-}
-.header--userInfo_photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: var(--radius-1);
 
-}
 .header--userInfo_name {
     font-family: Noto Sans;
     text-transform: capitalize;

@@ -1,3 +1,13 @@
 .boardHeader {
-    margin-top: 67px;
+    padding-top: 35px;
+}
+.boardHeader__left {
+    display: flex;
+    align-items: center;
+}
+.boardHeader__left-boardStatus > h3 {
+    margin-left: 10px;
+}
+.boardHeader__left-boardMembers {
+    display: flex;
 }

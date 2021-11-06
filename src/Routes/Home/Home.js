@@ -1,4 +1,5 @@
 import React from 'react';
+import './Home.css';
 import BoardHeader from '../../Components/BoardHeader/BoardHeader';
 import Header from '../../Components/Header/Header';
 
@@ -6,7 +7,9 @@ function Home() {
     return (
         <div className="home">
             <Header />
-            <BoardHeader />
+            <div className="home__container">
+                <BoardHeader />
+            </div>
         </div>
     )
 }
