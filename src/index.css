@@ -28,7 +28,7 @@
     align-items: center;
     width: auto;
     height: 32px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     background-color: var(--gray-bg-1);
     padding: 0 16px;
     border-radius: var(--radius-1);

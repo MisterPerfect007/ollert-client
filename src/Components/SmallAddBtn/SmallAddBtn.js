@@ -16,7 +16,11 @@ function SmallAddBtn({size}) {
         color: var(--main-white);
         width: ${giveBtnSize}px;
         height: ${giveBtnSize}px;
+        font-weight: 600;
+        font-size: ${size === "md" ? "20px" : "18px"};
         background-color: var(--main-blue);
+        user-select: none;
+        cursor: pointer;
     `
     return (
         <Wrapper>
