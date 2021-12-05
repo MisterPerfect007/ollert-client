@@ -25,7 +25,7 @@ function BoardHeader() {
                 </div>
             </div>
             <div className="boardHeader__right">
-                <div className="boardHeader__right gray-btn">
+                <div className="boardHeader__rightShowMenu gray-btn">
                    <IconContext.Provider value={{color: "var(--gray-3)",size: "1.2em"}}>
                         <AiOutlineEllipsis />
                     </IconContext.Provider>
