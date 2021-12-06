@@ -1,6 +1,8 @@
 .header {
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 67px;
+    height: var(--header-height);
     background-color: #fff;
     /* border: 1px solid red; */
     display: flex;
@@ -32,15 +34,19 @@
     padding-right: 20px;
     margin-right: 20px;
 }
-.header--boardInfo_btn {
+/* .header--boardInfo_btn {
     display: flex;
     align-items: center;
     background-color: var(--gray-bg-1);
     padding: 4px 8px;
     border-radius: var(--radius-1);
     cursor: pointer;
-}
-.header--boardInfo_btn > h3 {
+} */
+/* .header--boardInfo_btn:hover {
+    transition: all 0.3s;
+    background-color: #e6e6e6;
+} */
+/* .header--boardInfo_btn > h3 {
     font-weight: 500;
     font-style: normal;
     font-size: 12px;
@@ -48,7 +54,7 @@
     letter-spacing: -0.035em;
     font-family: poppins;
     color: var(--gray-3);
-}
+} */
 .header__right{
     display: flex;
     align-items: center;
@@ -59,6 +65,7 @@
     background-color: var(--main-white);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 3px;
+    margin-right: 30px;
     border-radius: var(--radius-1);
 }
 .header--search_input {
@@ -86,7 +93,16 @@
 .header--userInfo {
     display: flex;
     align-items: center;
+    padding: 6px 12px;
+    border-radius: var(--radius-1);
+
 }
+.header--userInfo:hover {
+    transition: all 0.3s;
+    background-color: var(--gray-bg-1);
+    cursor: pointer;
+}
+
 .header--userInfo_name {
     font-family: Noto Sans;
     text-transform: capitalize;
@@ -94,4 +110,5 @@
     font-weight: bold;
     font-size: 12px;
     line-height: 16px;
+    margin-right: 10px;
 }

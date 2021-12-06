@@ -1,0 +1,19 @@
+.boardHeader {
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.boardHeader__left {
+    display: flex;
+    align-items: center;
+}
+.boardHeader__left-boardStatus {
+    margin-right: 20px;
+}
+.boardHeader__left-boardStatus > h3 {
+    margin-left: 10px;
+}
+.boardHeader__left-boardMembers {
+    display: flex;
+}

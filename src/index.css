@@ -16,10 +16,36 @@
   /* Border-radius */
   --radius-1: 8px;
   --radius-2: 12px;
+  /* Header height */
+  --header-height: 67px;
 }
 .d-f {
   display: flex;
   align-items: center;
+}
+.gray-btn {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 32px;
+    /* margin-right: 20px; */
+    background-color: var(--gray-bg-1);
+    padding: 0 16px;
+    border-radius: var(--radius-1);
+    cursor: pointer;
+}
+.gray-btn:hover {
+    transition: all 0.3s;
+    background-color: #e6e6e6;
+}
+.gray-btn > h3 {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.035em;
+    font-family: poppins;
+    color: var(--gray-3);
 }
 
 * {

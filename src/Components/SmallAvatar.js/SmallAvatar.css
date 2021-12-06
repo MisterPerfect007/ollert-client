@@ -1,0 +1,14 @@
+.smallAvatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    background-color: var(--gray-bg-1);
+    border-radius: var(--radius-1);
+}
+.smallAvatar__image {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: var(--radius-1);
+
+}
