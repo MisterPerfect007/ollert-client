@@ -12,6 +12,7 @@
   --gray-3: #828282;
   --gray-4: #BDBDBD;
   --gray-bg-1: #F2F2F2;
+  --board-boby-bg: #f8f9fd;
 
   /* Border-radius */
   --radius-1: 8px;
@@ -26,6 +27,7 @@
 .gray-btn {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: auto;
     height: 32px;
     /* margin-right: 20px; */

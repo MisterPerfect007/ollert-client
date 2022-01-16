@@ -2,10 +2,10 @@ import React from 'react';
 import "./BoardHeader.css";
 import { IconContext } from "react-icons";
 import { MdLock } from "react-icons/md";
-import { AiOutlineEllipsis } from "react-icons/ai";
+import { BsThreeDots } from 'react-icons/bs';
 
-import SmallAvatar from '../SmallAvatar.js/SmallAvatar';
-import SmallAddBtn from '../SmallAddBtn/SmallAddBtn';
+import SmallAvatar from '../../SmallAvatar.js/SmallAvatar';
+import SmallAddBtn from '../../SmallAddBtn/SmallAddBtn';
 
 function BoardHeader() {
     return (
@@ -26,10 +26,12 @@ function BoardHeader() {
             </div>
             <div className="boardHeader__right">
                 <div className="boardHeader__rightShowMenu gray-btn">
-                   <IconContext.Provider value={{color: "var(--gray-3)",size: "1.2em"}}>
-                        <AiOutlineEllipsis />
+                   <IconContext.Provider value={{color: "var(--gray-3)"}}>
+                        <BsThreeDots />
                     </IconContext.Provider>
-                    <h3>Show Menu</h3>
+                    <h3 style={
+                        {paddingLeft: '10px'}
+                    }>Show Menu</h3>
                 </div>
             </div>
         </div>

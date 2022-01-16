@@ -1,0 +1,20 @@
+.board__container {
+    margin-top: var(--header-height);
+    padding: 0 25px;
+}
+.board__body {
+    width: 100%;
+    min-height: 500px;
+    background-color: var(--board-boby-bg);
+    margin-top: 25px;
+    border-radius: var(--radius-2);
+    /* overflow-x: scroll; */
+    /* border: 1px solid red; */
+}
+
+.board__body--container {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    overflow-x: scroll;
+}
