@@ -24,3 +24,22 @@
 .card__labels {
     margin: 10px 0;
 }
+.card__bottom {
+    justify-content: space-between;
+}
+.card__commentAndAttachment, .card__bottom, .card__comment, .card__attachment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.card__attachment > p, .card__comment > p {
+    font-family: Noto Sans;
+    color: var(--gray-4);
+    font-size: 10px;
+}
+.card__attachment {
+    padding-left: 10px;
+}
+.card__attachment > p, .card__comment > p {
+    padding-left: 5px;
+}

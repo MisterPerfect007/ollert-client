@@ -18,7 +18,6 @@ function BoardList() {
                 <Card />
                 <Card />
                 <Card />
-                <Card />
             </div>
         </div>
     )

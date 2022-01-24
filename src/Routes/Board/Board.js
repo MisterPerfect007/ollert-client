@@ -15,12 +15,9 @@ function Board() {
                 <div className='board__body'>
                     <div className='board__body--container'>
                         <BoardList />
+                        {/* <BoardList />
                         <BoardList />
-                        <BoardList />
-                        <BoardList />
-                        <BoardList />
-                        <BoardList />
-                        <BoardList />
+                        <BoardList /> */}
                     </div>
                 </div>
             </div>

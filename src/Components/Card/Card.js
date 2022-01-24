@@ -1,7 +1,10 @@
 import React from 'react';
+import { IconContext } from 'react-icons';
+import { MdAttachFile, MdOutlineInsertComment } from 'react-icons/md';
 
 import './Card.css';
 import CardLabel from './CardLabel/CardLabel';
+import CardMembers from './CardMembers/CardMembers';
 
 function Card() {
     return (
@@ -17,6 +20,26 @@ function Card() {
                 <CardLabel color='#ff0000' text='Newtext'/>
                 <CardLabel color='#00ffaa' text='Newtext'/>
                 <CardLabel color='#ff00ff' text='text'/>
+            </div>
+            <div className='card__bottom'>
+                <CardMembers />
+                <div className='card__commentAndAttachment'>
+                    <div className='card__comment'>
+                        <IconContext.Provider value={{color: 'var(--gray-4)', size: '12px'}}>
+                            <MdOutlineInsertComment />
+
+                        </IconContext.Provider>
+                        <p>2</p>
+                    </div>
+                    <div className='card__attachment'>
+                        <IconContext.Provider value={{color: 'var(--gray-4)', size: '12px'}}>
+                            <MdAttachFile />
+
+                        </IconContext.Provider>
+                        
+                        <p>1</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

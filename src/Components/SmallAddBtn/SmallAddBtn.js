@@ -3,32 +3,26 @@ import './SmallAddBtn.css';
 import styled from 'styled-components';
 
 function SmallAddBtn({size}) {
-    function giveBtnSize  () {
-        if(size === "md") return "32"
-        else if(size === "sm") return "28"
-    }
-    // styled components
-    const Wrapper = styled.div`
+    return (
+        <Wrapper size={size}>
+            +
+        </Wrapper>
+    )
+}
+const Wrapper = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: var(--radius-1);
         color: var(--main-white);
-        width: ${giveBtnSize}px;
-        height: ${giveBtnSize}px;
+        width: ${props => props.size === 'sm' ? '28' : '32'}px;
+        height: ${props => props.size === 'sm' ? '28' : '32'}px;
         font-weight: 600;
-        font-size: ${size === "md" ? "20px" : "18px"};
+        font-size: ${props => props.size === 'sm' ? '18' : '20'}px;
         background-color: var(--main-blue);
         user-select: none;
         cursor: pointer;
     `
-    return (
-        <Wrapper>
-            +
-        </Wrapper>
-    )
-}
-
 
 
 export default SmallAddBtn;

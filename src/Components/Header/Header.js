@@ -4,7 +4,7 @@ import logo from "../../Assets/Logo.svg";
 import { IconContext } from "react-icons";
 import { CgLayoutGridSmall } from "react-icons/cg";
 import { RiArrowDownSFill } from "react-icons/ri";
-import SmallAvatar from '../SmallAvatar.js/SmallAvatar';
+import SmallAvatar from '../SmallAvatar/SmallAvatar';
 
 
 

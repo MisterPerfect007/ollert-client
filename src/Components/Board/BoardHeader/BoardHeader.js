@@ -4,7 +4,7 @@ import { IconContext } from "react-icons";
 import { MdLock } from "react-icons/md";
 import { BsThreeDots } from 'react-icons/bs';
 
-import SmallAvatar from '../../SmallAvatar.js/SmallAvatar';
+import SmallAvatar from '../../SmallAvatar/SmallAvatar';
 import SmallAddBtn from '../../SmallAddBtn/SmallAddBtn';
 
 function BoardHeader() {
