@@ -1,0 +1,14 @@
+.addAnotherList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--main-blue);
+    width: 243px;
+    height: 32px;
+    font-family: Noto Sans;
+    font-size: 12px;
+    background-color: var(--blue-bg);
+    border-radius: var(--radius-1);
+    padding: 0 13px;
+    cursor: pointer;
+}

@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import SmallAddBtn from '../../SmallAddBtn/SmallAddBtn'
-import SmallAvatar from '../../SmallAvatar/SmallAvatar'
+import SmallAddBtn from '../../../SmallAddBtn/SmallAddBtn'
+import SmallAvatar from '../../../SmallAvatar/SmallAvatar'
 
 function CardMembers() {
     return (

@@ -18,10 +18,10 @@ const Label = styled.div`
     margin-right: 10px;
     margin-bottom: 10px;
     border-radius: var(--radius-2);
-    background-color: ${ props => props.color + '20'};
+    background-color: #${ props => props.color + '20'};
 `
 const LabelText = styled.p`
-    color: ${props => props.color};
+    color: #${props => props.color};
     font-family: Noto Sans;
     font-size: 10px;
 `
