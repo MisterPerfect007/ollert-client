@@ -25,6 +25,11 @@
     width: 100%;
     border-radius: var(--radius-2);
     margin-bottom: 10px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 .card__title {
     font-family: Noto Sans;

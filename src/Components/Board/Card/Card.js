@@ -7,17 +7,27 @@ import CardLabel from './CardLabel/CardLabel';
 import CardMembers from './CardMembers/CardMembers';
 
 
-function Card({id, title, cover, labels, dragNDropFunctions}) {
-    const { handleDragStart, draggingItem, handleDragEnd } = dragNDropFunctions
+function Card({list_index, card_index, card_id, title, cover, labels, dragNDropFunctions}) {
+    const {isDragging, handleDragStart, draggingItemInfos, handleDragEnd, handleDragEnter } = dragNDropFunctions
 
     return (
         <div 
             className='card'
             draggable
-            onDragStart={(e) => handleDragStart(e, id)}
+            onDragStart={(e) => handleDragStart({
+                e: e,
+                card_id: card_id, 
+                draggedFromList_index: list_index,
+                draggedCard_index: card_index
+            })}
+            onDragEnter={ (e) => handleDragEnter({
+                e: e, 
+                enteredList_index: list_index,
+                enteredCard_index: card_index
+            })}
         >
             {
-                draggingItem === id && <div className='card_dragging'></div>
+                (isDragging && draggingItemInfos.current.card_id === card_id) && <div className='card_dragging'></div>
             }
             <div className='card__img'>
                 <img 
@@ -29,7 +39,7 @@ function Card({id, title, cover, labels, dragNDropFunctions}) {
             <div className='card__labels'>
                 {/* <CardLabel color='#ff0000' text='Newtext'/> */}
                 {
-                    labels.map((label, i) => {
+                    labels && labels.map((label, i) => {
                         return <CardLabel key={i} color={label.color} text={label.title}/>
                     })
                 }

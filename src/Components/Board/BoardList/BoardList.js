@@ -6,9 +6,16 @@ import './BoardList.css'
 import Card from '../Card/Card';
 import AddAnother from '../AddAnother/AddAnother';
 
-function BoardList({title, cards, dragNDropFunctions}) {
+function BoardList({list_index, id, title, cards, dragNDropFunctions}) {
+
+    const  {  handleDragEnter } = dragNDropFunctions
+
     return (
-        <div className='boardList'>
+        <div 
+            // onDragEnter={() => console.log('List index ', list_index) }
+            onDragEnter={() => handleDragEnter({enteredList_index: list_index,})}
+            className='boardList'
+        >
             <div className='boardList__header'>
                 <h2 className='boardList--title'>{title}</h2>
                 <IconContext.Provider value={{color: "var(--gray-3)"}}>
@@ -17,10 +24,12 @@ function BoardList({title, cards, dragNDropFunctions}) {
             </div>
             <div className='boardList__content'>
                 {
-                    cards.map((card, _) =>{
-                        return <Card 
+                    cards.map((card, i) =>{
+                        return card && <Card 
                                     key={card.id}
-                                    id={card.id}
+                                    card_id={card.id}
+                                    list_index={list_index}
+                                    card_index={i}
                                     title={card.title} 
                                     cover={card.cover} 
                                     labels={card.labels} 

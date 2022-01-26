@@ -1,5 +1,7 @@
 
 export const cards = [
+    // dragggedCardInfo = cards[list_id].cards.splice(draggedIndex, 1)
+    // cards[list_index].cards.splice(entered_index, 0, dragggedCardInfo)
     {
         list_id: 1,
         list_title: 'Front-end',
